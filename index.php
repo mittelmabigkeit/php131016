@@ -30,4 +30,5 @@ echo "</br>";
 echo MyClass::$d;
 echo "</br>";
 echo "PHP_STORM";
+echo "aaaaaa";
 ?>
