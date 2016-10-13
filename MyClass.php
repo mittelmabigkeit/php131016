@@ -9,6 +9,7 @@
 class MyClass {
     public $a, $b;
     private $c;
+    static $d=666;
     function __construct($a,$b) {
         $this -> a = $a;
         $this -> b = $b;
@@ -20,7 +21,7 @@ class MyClass {
         return $this -> c;
     }
     function izm() {
-        $this -> c = $this -> c + 1;
+        $this -> c += 13;
         return $this ->c;
     }
     function __destruct() {
