@@ -7,9 +7,11 @@
  */
 
 class MyClass {
-    public $a, $b;
+    /*public $a, $b;
     private $c;
-    static $d=666;
+    static $d=666; */
+    private static $count=0;
+    /*
     function __construct($a,$b) {
         $this -> a = $a;
         $this -> b = $b;
@@ -28,5 +30,9 @@ class MyClass {
         echo "<br>";
         echo "pochistili";
     }
+    */
+    public function __construct() {self::$count++;}
+    public function __destruct() {self::$count--;}
+    public static function getCount() {return self::$count;}
 }
 ?>
